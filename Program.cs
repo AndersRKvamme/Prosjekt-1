@@ -14,7 +14,7 @@ class Program
         {
         Console.WriteLine("Welcome Anders");
         }
-        else name != expectedName
+        else
         {
         Console.WriteLine("Invalid user");
         }
