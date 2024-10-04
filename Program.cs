@@ -1,4 +1,6 @@
-﻿namespace Prosjekt_1;
+﻿using System.Reflection.Metadata.Ecma335;
+
+namespace Prosjekt_1;
 
 class Program
 {
@@ -8,6 +10,7 @@ class Program
         string myWord = "Word";
         Console.WriteLine(myWord);
         string expectedName = "Anders";
+        Console.WriteLine("What's your name?");
         string? name = Console.ReadLine();
         Console.WriteLine("Hello " + name);
         if (name == expectedName)
@@ -16,8 +19,13 @@ class Program
         }
         else
         {
-        Console.WriteLine("Invalid user");
+        Console.WriteLine("Hello " +name+ ", please leave");
         }
+        int convert = 16;
+        double converted = Convert.ToDouble(convert)+0.5;
+        Console.WriteLine(converted);
+        Console.WriteLine(converted.GetType());
+
         //01/10/2024
         //Arrays, store multiple values of the same 
         
@@ -40,6 +48,6 @@ class Program
         {
         Console.WriteLine(myStrings);
         }
-    
+    Console.Beep();
     }
 }
