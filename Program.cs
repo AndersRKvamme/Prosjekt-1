@@ -6,12 +6,16 @@ class Program
 {
     static void Main(string[] args)
     {
+        static int myFunc(int num, int num2){
+            return num * num2;
+        };
+        Console.WriteLine(myFunc(10, 12));
         Console.WriteLine("Hello, World!");
         string myWord = "Word";
         Console.WriteLine(myWord);
-        string expectedName = "Anders";
+        string expectedName = "anders";
         Console.WriteLine("What's your name?");
-        string? name = Console.ReadLine();
+        string? name = Console.ReadLine()?.ToLower();
         Console.WriteLine("Hello " + name);
         if (name == expectedName)
         {
